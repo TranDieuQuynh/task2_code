@@ -8,9 +8,6 @@ RUN npm install
 
 COPY . .
 
-# Create .env.production file for React build
-RUN echo "REACT_APP_API_URL=/api" > .env.production
-
 # Build the React app
 RUN npm run build
 
